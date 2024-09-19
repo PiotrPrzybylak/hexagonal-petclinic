@@ -11,7 +11,7 @@
 Our products:
 
 <ol>
-    <li th:each="product: ${products}" >
+    <li th:each="product: ${products}">
         <span th:text="${product.name}"></span>
         <form action="/buy" method="post">
             <input name="name" type="hidden" th:value="${product.name}"/>

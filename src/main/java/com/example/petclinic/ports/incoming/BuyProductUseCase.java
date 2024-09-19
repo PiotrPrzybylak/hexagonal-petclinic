@@ -4,5 +4,6 @@ public interface BuyProductUseCase {
 
     void execute(Command command);
 
-    record Command(String name) {}
+    record Command(String name) {
+    }
 }

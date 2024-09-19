@@ -11,6 +11,6 @@ record ListProductsEndpoint(ListProductsUseCase useCase) {
 
     @GetMapping("/api/products")
     public List<ListProductsUseCase.Product> get() {
-        return  useCase.list();
+        return useCase.list();
     }
 }

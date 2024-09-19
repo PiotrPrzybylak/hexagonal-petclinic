@@ -4,5 +4,6 @@ public interface CreateProductPort {
 
     void create(Product product);
 
-    record Product(String name){}
+    record Product(String name) {
+    }
 }
