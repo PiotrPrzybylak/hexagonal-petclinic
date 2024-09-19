@@ -8,13 +8,12 @@
 
 <h1>Welcome to Hexagonal Petclinic</h1>
 
-Our products:
+Create new product:
 
-<ol>
-    <li th:each="product: ${products}" th:text="${product.name}"></li>
-</ol>
-
-<a href="/create_product">Create new product</a>
+<form method="post">
+    <input name="name"/>
+    <input type="submit"/>
+</form>
 
 </body>
 </html>
