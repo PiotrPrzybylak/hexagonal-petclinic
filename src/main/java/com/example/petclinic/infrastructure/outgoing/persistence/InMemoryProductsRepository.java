@@ -1,9 +1,9 @@
 package com.example.petclinic.infrastructure.outgoing.persistence;
 
-import com.example.petclinic.ports.outgoing.CreateProductPort;
-import com.example.petclinic.ports.outgoing.FindProductPort;
-import com.example.petclinic.ports.outgoing.ListProductsPort;
-import com.example.petclinic.ports.outgoing.UpdateProductPort;
+import com.example.petclinic.domain.port.outgoing.CreateProductPort;
+import com.example.petclinic.domain.port.outgoing.FindProductPort;
+import com.example.petclinic.domain.port.outgoing.ListProductsPort;
+import com.example.petclinic.domain.port.outgoing.UpdateProductPort;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

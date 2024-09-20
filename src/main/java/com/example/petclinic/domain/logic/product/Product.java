@@ -1,6 +1,6 @@
-package com.example.petclinic.domain.product;
+package com.example.petclinic.domain.logic.product;
 
-import com.example.petclinic.ports.outgoing.ProductBoughtNotifier;
+import com.example.petclinic.domain.port.outgoing.ProductBoughtNotifier;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

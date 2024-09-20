@@ -1,16 +1,16 @@
 package com.example.petclinic.infrastructure.application;
 
-import com.example.petclinic.domain.product.BuyProductFacade;
-import com.example.petclinic.domain.product.CreateProductFacade;
-import com.example.petclinic.domain.product.ListProductsFacade;
-import com.example.petclinic.ports.incoming.BuyProductUseCase;
-import com.example.petclinic.ports.incoming.CreateProductUseCase;
-import com.example.petclinic.ports.incoming.ListProductsUseCase;
-import com.example.petclinic.ports.outgoing.CreateProductPort;
-import com.example.petclinic.ports.outgoing.FindProductPort;
-import com.example.petclinic.ports.outgoing.ListProductsPort;
-import com.example.petclinic.ports.outgoing.ProductBoughtNotifier;
-import com.example.petclinic.ports.outgoing.UpdateProductPort;
+import com.example.petclinic.domain.logic.product.BuyProductFacade;
+import com.example.petclinic.domain.logic.product.CreateProductFacade;
+import com.example.petclinic.domain.logic.product.ListProductsFacade;
+import com.example.petclinic.domain.port.incoming.BuyProductUseCase;
+import com.example.petclinic.domain.port.incoming.CreateProductUseCase;
+import com.example.petclinic.domain.port.incoming.ListProductsUseCase;
+import com.example.petclinic.domain.port.outgoing.CreateProductPort;
+import com.example.petclinic.domain.port.outgoing.FindProductPort;
+import com.example.petclinic.domain.port.outgoing.ListProductsPort;
+import com.example.petclinic.domain.port.outgoing.ProductBoughtNotifier;
+import com.example.petclinic.domain.port.outgoing.UpdateProductPort;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

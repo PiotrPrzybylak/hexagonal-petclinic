@@ -1,6 +1,6 @@
 package com.example.petclinic.infrastructure.incoming.web;
 
-import com.example.petclinic.ports.incoming.ListProductsUseCase;
+import com.example.petclinic.domain.port.incoming.ListProductsUseCase;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 

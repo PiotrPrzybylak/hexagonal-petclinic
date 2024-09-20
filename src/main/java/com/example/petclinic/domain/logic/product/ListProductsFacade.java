@@ -1,7 +1,7 @@
-package com.example.petclinic.domain.product;
+package com.example.petclinic.domain.logic.product;
 
-import com.example.petclinic.ports.incoming.ListProductsUseCase;
-import com.example.petclinic.ports.outgoing.ListProductsPort;
+import com.example.petclinic.domain.port.incoming.ListProductsUseCase;
+import com.example.petclinic.domain.port.outgoing.ListProductsPort;
 
 import java.util.List;
 

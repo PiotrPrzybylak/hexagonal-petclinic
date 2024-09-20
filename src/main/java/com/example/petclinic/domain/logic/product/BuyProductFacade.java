@@ -1,9 +1,9 @@
-package com.example.petclinic.domain.product;
+package com.example.petclinic.domain.logic.product;
 
-import com.example.petclinic.ports.incoming.BuyProductUseCase;
-import com.example.petclinic.ports.outgoing.FindProductPort;
-import com.example.petclinic.ports.outgoing.ProductBoughtNotifier;
-import com.example.petclinic.ports.outgoing.UpdateProductPort;
+import com.example.petclinic.domain.port.incoming.BuyProductUseCase;
+import com.example.petclinic.domain.port.outgoing.FindProductPort;
+import com.example.petclinic.domain.port.outgoing.ProductBoughtNotifier;
+import com.example.petclinic.domain.port.outgoing.UpdateProductPort;
 
 import java.util.Optional;
 

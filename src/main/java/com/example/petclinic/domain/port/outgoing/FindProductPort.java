@@ -1,4 +1,4 @@
-package com.example.petclinic.ports.outgoing;
+package com.example.petclinic.domain.port.outgoing;
 
 import java.util.Optional;
 

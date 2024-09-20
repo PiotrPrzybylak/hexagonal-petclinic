@@ -1,7 +1,7 @@
-package com.example.petclinic.domain.product;
+package com.example.petclinic.domain.logic.product;
 
-import com.example.petclinic.ports.incoming.CreateProductUseCase;
-import com.example.petclinic.ports.outgoing.CreateProductPort;
+import com.example.petclinic.domain.port.incoming.CreateProductUseCase;
+import com.example.petclinic.domain.port.outgoing.CreateProductPort;
 
 public record CreateProductFacade(CreateProductPort createProductPort) implements CreateProductUseCase {
 

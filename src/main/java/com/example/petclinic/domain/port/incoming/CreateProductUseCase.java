@@ -1,4 +1,4 @@
-package com.example.petclinic.ports.incoming;
+package com.example.petclinic.domain.port.incoming;
 
 public interface CreateProductUseCase {
 

@@ -1,6 +1,6 @@
 package com.example.petclinic.infrastructure.incoming.rest;
 
-import com.example.petclinic.ports.incoming.ListProductsUseCase;
+import com.example.petclinic.domain.port.incoming.ListProductsUseCase;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
