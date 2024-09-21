@@ -11,11 +11,15 @@
 Our products:
 
 <ol>
-    <li th:each="product: ${products}">
-        <span th:text="${product.name}"></span>
+    <li th:each="command: ${products}">
+        <span th:text="${command.name}"></span>
         <form action="/buy" method="post">
-            <input name="name" type="hidden" th:value="${product.name}"/>
+            <input name="name" type="hidden" th:value="${command.name}"/>
             <input type="submit" value="Buy"/>
+        </form>
+        <form action="/return" method="post">
+            <input name="name" type="hidden" th:value="${command.name}"/>
+            <input type="submit" value="Return"/>
         </form>
     </li>
 </ol>
