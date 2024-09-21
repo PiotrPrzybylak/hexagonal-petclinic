@@ -17,6 +17,10 @@ Our products:
             <input name="name" type="hidden" th:value="${product.name}"/>
             <input type="submit" value="Buy"/>
         </form>
+        <form action="/return" method="post">
+            <input name="name" type="hidden" th:value="${product.name}"/>
+            <input type="submit" value="Return"/>
+        </form>
     </li>
 </ol>
 

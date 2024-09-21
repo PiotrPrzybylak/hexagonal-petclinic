@@ -3,9 +3,11 @@ package com.example.petclinic.infrastructure.application;
 import com.example.petclinic.domain.logic.product.BuyProductFacade;
 import com.example.petclinic.domain.logic.product.CreateProductFacade;
 import com.example.petclinic.domain.logic.product.ListProductsFacade;
+import com.example.petclinic.domain.logic.product.ReturnProductFacade;
 import com.example.petclinic.domain.port.incoming.BuyProductUseCase;
 import com.example.petclinic.domain.port.incoming.CreateProductUseCase;
 import com.example.petclinic.domain.port.incoming.ListProductsUseCase;
+import com.example.petclinic.domain.port.incoming.ReturnProductUseCase;
 import com.example.petclinic.domain.port.outgoing.CreateProductPort;
 import com.example.petclinic.domain.port.outgoing.FindProductPort;
 import com.example.petclinic.domain.port.outgoing.ListProductsPort;
@@ -30,5 +32,10 @@ class SpringConfiguration {
     @Bean
     BuyProductUseCase buyProductUseCase(FindProductPort findProductPort, UpdateProductPort updateProductPort, ProductBoughtNotifier productBoughtNotifier) {
         return new BuyProductFacade(findProductPort, updateProductPort, productBoughtNotifier);
+    }
+
+    @Bean
+    ReturnProductUseCase returnProductUseCase(FindProductPort findProductPort, UpdateProductPort updateProductPort) {
+        return new ReturnProductFacade(findProductPort, updateProductPort);
     }
 }
