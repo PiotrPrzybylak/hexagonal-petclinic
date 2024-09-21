@@ -15,9 +15,8 @@ public record BuyProductFacade(FindProductPort findProductPort, UpdateProductPor
     public void execute(Command command) {
         Optional<FindProductPort.Product> maybeProduct = findProductPort.findByName(command.name());
         maybeProduct.ifPresent(foundProduct -> {
-            Product product = new Product(foundProduct.name(), foundProduct.quantity(), productBoughtNotifier);
+            Product product = new Product(foundProduct.name(), foundProduct.quantity(), productBoughtNotifier, updateProductPort);
             product.buy();
-            updateProductPort.update(new UpdateProductPort.Product(foundProduct.name(), product.getQuantity()));
         });
     }
 }

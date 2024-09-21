@@ -35,7 +35,7 @@ class SpringConfiguration {
     }
 
     @Bean
-    ReturnProductUseCase returnProductUseCase(FindProductPort findProductPort, UpdateProductPort updateProductPort) {
-        return new ReturnProductFacade(findProductPort, updateProductPort);
+    ReturnProductUseCase returnProductUseCase(FindProductPort findProductPort, UpdateProductPort updateProductPort, ProductBoughtNotifier productBoughtNotifier) {
+        return new ReturnProductFacade(findProductPort, updateProductPort, productBoughtNotifier);
     }
 }
