@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Welcome to Hexagonal Petclinic</h1>
+
+Appointments:
+
+<ol>
+    <li th:each="appointment: ${appointments}">
+        <span th:text="${appointment.time}"></span>
+        <span th:text="${appointment.customerName}"></span>
+    </li>
+</ol>
+
+</body>
+</html>

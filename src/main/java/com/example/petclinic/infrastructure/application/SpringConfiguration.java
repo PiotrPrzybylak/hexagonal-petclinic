@@ -1,10 +1,12 @@
 package com.example.petclinic.infrastructure.application;
 
+import com.example.petclinic.domain.logic.appointment.AppointmentsViewFacade;
 import com.example.petclinic.domain.logic.appointment.MakeAppointmentFacade;
 import com.example.petclinic.domain.logic.product.BuyProductFacade;
 import com.example.petclinic.domain.logic.product.CreateProductFacade;
 import com.example.petclinic.domain.logic.product.ListProductsFacade;
 import com.example.petclinic.domain.logic.product.ReturnProductFacade;
+import com.example.petclinic.domain.port.incoming.AppointmentsView;
 import com.example.petclinic.domain.port.incoming.BuyProductUseCase;
 import com.example.petclinic.domain.port.incoming.CreateProductUseCase;
 import com.example.petclinic.domain.port.incoming.ListProductsUseCase;
@@ -13,6 +15,7 @@ import com.example.petclinic.domain.port.incoming.ReturnProductUseCase;
 import com.example.petclinic.domain.port.outgoing.CreateAppointmentPort;
 import com.example.petclinic.domain.port.outgoing.CreateProductPort;
 import com.example.petclinic.domain.port.outgoing.FindProductPort;
+import com.example.petclinic.domain.port.outgoing.ListAppointmentsPort;
 import com.example.petclinic.domain.port.outgoing.ListProductsPort;
 import com.example.petclinic.domain.port.outgoing.ProductBoughtNotifier;
 import com.example.petclinic.domain.port.outgoing.UpdateProductPort;
@@ -45,5 +48,10 @@ class SpringConfiguration {
     @Bean
     MakeAppointmentUseCase makeAppointmentUseCase(CreateAppointmentPort port) {
         return new MakeAppointmentFacade(port);
+    }
+
+    @Bean
+    AppointmentsView appointmentsView(ListAppointmentsPort port) {
+        return new AppointmentsViewFacade(port);
     }
 }
