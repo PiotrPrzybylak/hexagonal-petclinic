@@ -9,4 +9,6 @@ rootProject.name = 'hexagonal-petclinic'
 include 'domain'
 include 'port-in'
 include 'port-out'
+include 'adapter-in'
+include 'adapter-out'
 
