@@ -3,7 +3,7 @@ package com.example.petclinic.domain.logic.product;
 import com.example.petclinic.domain.port.outgoing.ProductBoughtNotifier;
 import com.example.petclinic.domain.port.outgoing.UpdateProductPort;
 
-public class Product {
+class Product {
 
     private String name;
     private int quantity;
