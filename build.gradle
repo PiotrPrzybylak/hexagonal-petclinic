@@ -40,6 +40,8 @@ dependencies {
 //	implementation 'org.springframework.modulith:spring-modulith-starter-jpa'
 	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
 	implementation project(':domain')
+	implementation project(':port-in')
+	implementation project(':port-out')
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.h2database:h2'
