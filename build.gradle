@@ -42,8 +42,8 @@ dependencies {
 	implementation project(':domain')
 	implementation project(':port-in')
 	implementation project(':port-out')
-	implementation project(':adapter-in')
-	implementation project(':adapter-out')
+	runtimeOnly project(':adapter-in')
+	runtimeOnly project(':adapter-out')
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.h2database:h2'
